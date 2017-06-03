@@ -1,7 +1,7 @@
 # distance-calc
 Calculate haversine distance between current location and a list of other locations and select nearest
 
-May not always choose the best loctaion because it is not calculating driving distance, only haversine distance ("as the crow flies")
+May not always choose the best location because it is not calculating driving distance, only haversine distance ("as the crow flies")
 
 
 Requires:
