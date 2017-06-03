@@ -14,7 +14,7 @@ def location_of(location):
     #print("Processing, please wait..\n")
     #print("Processing, please wait.\n")
     return (lat,lon)
-
+# Gets latitude and longitude from an address string
 
 def distance_between(loc1, loc2):
     lat1, lon1 = loc1
@@ -23,6 +23,7 @@ def distance_between(loc1, loc2):
     #print(dist)
     print("Please wait, retrieving data.\n")
     return dist
+# Calculates distance between two sets of latitudes and longitudes
 
 def get_atm_addresses(filespec):
     with open(filespec) as f:
@@ -30,6 +31,7 @@ def get_atm_addresses(filespec):
     expr = re.compile(r"\s[0-9\-]+.+\w{2}\s\d{5}")
     addresses = [e[1:] for e in re.findall(expr, data)]
     return addresses
+# Takes location_list as input and outputs list of address strings
 
 def find_closest_atms(customer, atms, limit=5):
     cloc = location_of(currentaddr)
@@ -41,6 +43,7 @@ def find_closest_atms(customer, atms, limit=5):
         atm_distances.append((atm, dist))
     closest_atm_distances = sorted(atm_distances, key=lambda t: t[1])
     return closest_atm_distances[:limit]
+# Calculates which atm is closest to current location
 
 atms = get_atm_addresses('location_list')
 nearest_atms = find_closest_atms(currentaddr, atms)
