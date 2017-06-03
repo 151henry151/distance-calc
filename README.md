@@ -1,15 +1,19 @@
 # distance-calc
 Calculate haversine distance between current location and a list of other locations and select nearest
 
-May not always choose the best loctaion because it is not caluculating driving distance, only haversine distance ("as the crow flies")
+May not always choose the best loctaion because it is not calculating driving distance, only haversine distance ("as the crow flies")
 
 
 Requires:
 
 re
+
 gpxpy
+
 googlemaps
+
 credentials.py with api key
+
 location_list which is a list of ATM locations
 
 
