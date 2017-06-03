@@ -6,8 +6,11 @@ May not always choose the best loctaion because it is not caluculating driving d
 
 Requires:
 
-Requires credentials.py with api key
-Requires location_list which is a list of ATM locations
+re
+gpxpy
+googlemaps
+credentials.py with api key
+location_list which is a list of ATM locations
 
 
 To Do:
